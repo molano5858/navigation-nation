@@ -30,6 +30,17 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(0 0 0/ 0.6);
+  transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+  transition: all 400ms ease-in-out;
+  transform: translateX(0);
+}
+
+.overlay-slide-left {
+  transition: all 400ms ease-in-out;
+  transform: translateX(-100vw);
 }
 
 nav,
@@ -49,9 +60,6 @@ nav ul {
 nav ul li {
   height: 20%;
   overflow: hidden;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
   position: relative;
@@ -115,7 +123,7 @@ nav li:nth-of-type(5) {
   position: fixed;
   top: 1rem;
   right: 2rem;
-  z-index: 10;
+  z-index: 22;
   display: inline;
   cursor: pointer;
 }
@@ -163,6 +171,12 @@ section#home {
   background-image: url("https://images.pexels.com/photos/18477466/pexels-photo-18477466/free-photo-of-ciudad-luces-noche-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center center;
+}
+
+.contrast {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/ 0.5);
 }
 
 section#home a {
