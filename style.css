@@ -2,11 +2,11 @@
 
 :root {
   --primaryColor: #fff;
-  --navColor1: #21292c;
-  --navColor2: #aa3e39;
-  --navColor3: #aa6e39;
-  --navColor4: #236267;
-  --navColor5: #2c8437;
+  --navColor1: #264653;
+  --navColor2: #2a9d8f;
+  --navColor3: #e9c46a;
+  --navColor4: #f4a261;
+  --navColor5: #e76f51;
   --myFont: "Figtree", sans-serif;
 }
 
@@ -30,6 +30,83 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(0 0 0/ 0.6);
+}
+
+nav,
+nav ul {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  list-style: none;
+}
+
+nav ul li {
+  height: 20%;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  position: relative;
+}
+
+nav li a {
+  position: relative;
+  top: 40%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  margin: auto;
+  transition: all 300ms ease-in-out;
+}
+
+nav li a:hover {
+  transform: scale(1.2);
+}
+
+nav li a::before {
+  content: "";
+  width: 25vw;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+nav li a:hover::before {
+  opacity: 1;
+}
+
+nav li:nth-of-type(1) {
+  background-color: var(--navColor1);
+}
+
+nav li:nth-of-type(2) {
+  background-color: var(--navColor2);
+}
+
+nav li:nth-of-type(3) {
+  background-color: var(--navColor3);
+}
+
+nav li:nth-of-type(4) {
+  background-color: var(--navColor4);
+}
+
+nav li:nth-of-type(5) {
+  background-color: var(--navColor5);
 }
 
 /* --- Menu Bars ------------------------------------ */
@@ -83,7 +160,7 @@ section {
 }
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+  background-image: url("https://images.pexels.com/photos/18477466/pexels-photo-18477466/free-photo-of-ciudad-luces-noche-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center center;
 }
@@ -94,7 +171,7 @@ section#home a {
   top: 1.5rem;
   left: 1.5rem;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-bottom: 5px;
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
