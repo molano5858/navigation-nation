@@ -39,7 +39,7 @@ body {
 }
 
 .overlay-slide-left {
-  transition: all 400ms ease-in-out 280ms;
+  transition: all 400ms ease-in-out 220ms;
   transform: translateX(-100vw);
 }
 
@@ -277,4 +277,16 @@ section#contact {
     top: 0.5rem;
     right: 1rem;
   }
+}
+
+.pruebaIn {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+}
+
+.pruebaOut {
+  width: 120px;
+  height: 120px;
+  background-color: lightcoral;
 }
